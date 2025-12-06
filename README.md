@@ -33,21 +33,21 @@ These approaches caused several issues:
 3. Dependency Management: Uses ref() to manage model dependencies and ensure correct execution order.
 4. Development Workflow: Provides a smooth workflow with version control, testing, environments, and easy debugging.
 
-![image.png](../reference_images/image.png)
+![image.png](../netflix/screenshots/image.png)
 
 **DBT Processes:**
 
 Loading → Transform → Snapshot → Test → Deploy → Document
 
-![image.png](../reference_images/image%201.png)
+![image](reference_images/image%201.png)
 
 **Data Engineering Life Cycle:** 
 
-![image.png](../reference_images/image%202.png)
+![image.png](reference_images/image%202.png)
 
 **DBT with Data Warehouse:**
 
-![image.png](../reference_images/image%203.png)
+![image.png](reference_images/image%203.png)
 
 **Data Warehouse**:
 
@@ -73,7 +73,7 @@ Data is loaded first, then transformed inside the warehouse. Ideal for large, ra
 
 **Modern Data Architecture:**
 
-![image.png](../reference_images/image%204.png)
+![image.png](reference_images/image%204.png)
 
 **Lets Start with Project….**
 
@@ -596,7 +596,7 @@ ON f.movie_id = d.movie_id
 
 Now the mart table is created
 
-![image.png](../reference_images/image%205.png)
+![image.png](reference_images/image%205.png)
 
 ### **DBT Sources**
 
@@ -673,7 +673,7 @@ Use case: Values that should never change (e.g., Date of Birth).
 
 **SCD Type 1 — Overwrite**
 
-![image.png](../reference_images/image%206.png)
+![image.png](reference_images/image%206.png)
 
 - New data overwrites the old value.
 - No history is maintained.
@@ -682,11 +682,11 @@ Use case: Corrections or non-critical historical attributes.
 
 **SCD Type 2 — Historical Versioning**
 
-![image.png](../reference_images/image%207.png)
+![image.png](reference_images/image%207.png)
 
-![image.png](../reference_images/image%208.png)
+![image.png](reference_images/image%208.png)
 
-![image.png](../reference_images/0ab82ef0-0e48-4da2-b5c6-2093b14eb1ff.png)
+![image.png](reference_images/0ab82ef0-0e48-4da2-b5c6-2093b14eb1ff.png)
 
 Each change creates a new record in the dimension table.
 
@@ -700,7 +700,7 @@ Use case: When tracking historical changes is important (e.g., customer address 
 
 **SCD Type 3 — Limited History**
 
-![image.png](../reference_images/image%209.png)
+![image.png](reference_images/image%209.png)
 
 Only two states stored:
 
@@ -719,7 +719,7 @@ Use case: When the main table must stay small and optimized.
 
 **SCD Type 6 — Hybrid (Type 1 + Type 2 + Type 3)**
 
-![image.png](../reference_images/image%2010.png)
+![image.png](reference_images/image%2010.png)
 
 Combines features of Type 1, Type 2, and Type 3.
 
@@ -798,7 +798,7 @@ WHERE user_id = 18;
 
 run `dbt snapshot`
 
-![image.png](../reference_images/image%2011.png)
+![image.png](reference_images/image%2011.png)
 
 As we can see active and inactive rows
 
@@ -1073,7 +1073,7 @@ packages:
 
 ## Part 10: Incremental Models (strategies: append, merge, delete+insert)
 
-## Part 11: Custom Materializations, Schema, Alias
+## Part 11: Custom Materialization, Schema, Alias
 
 ## Part 12: Analyses
 
