@@ -33,7 +33,7 @@ These approaches caused several issues:
 3. Dependency Management: Uses ref() to manage model dependencies and ensure correct execution order.
 4. Development Workflow: Provides a smooth workflow with version control, testing, environments, and easy debugging.
 
-![image.png](../netflix/screenshots/image.png)
+![image.png](reference_images/image.png)
 
 **DBT Processes:**
 
@@ -1090,4 +1090,5 @@ packages:
 ## Part 18: Python Models
 
 ## Part 19: dbt Mesh (multi-project setup)
-Part 20: Adapter Development
+
+## Part 20: Adapter Development
