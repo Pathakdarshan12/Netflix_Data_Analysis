@@ -1,0 +1,11 @@
+venv/
+ml_20m/
+netflix/target/
+netflix/logs/
+netflix/dbt_packages/
+netflix/dbt_internal_packages/
+.idea/
+.vscode/
+*.pyc
+__pycache__/
+*.log
